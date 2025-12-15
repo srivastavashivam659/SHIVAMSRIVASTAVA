@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-commerce Navbar</title>
+
+<style>
+    .container{
+        border: 2px solid #000;
+            width: 90%;
+            margin: 20px auto;
+            padding: 0px;
+            height: 500px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    
+    nav {
+        width: 100%;
+        background: #111;
+        color: #fff;
+        padding: 12px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .content{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+
+   
+    .nav-links {
+        display: flex;
+        gap: 35px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+   
+    .right-menu {
+        display: flex;
+        gap: 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    
+    .menu-btn {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    
+    #toggle {
+        display: none;
+    }
+
+    
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        padding: 20px;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    
+    @media (max-width: 768px) {
+
+        .nav-links,
+        .right-menu {
+            display: none;
+        }
+
+        .menu-btn {
+            display: block;
+            color: white;
+        }
+
+        
+        #toggle:checked ~ .mobile-menu {
+            display: flex;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+
+
+<nav>
+    
+    <div class="logo">ShopEase</div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="right-menu">
+        <span>Cart 🛒</span>
+        <span>Login</span>
+    </div>
+
+    <label class="menu-btn" for="toggle">☰</label>
+    <input type="checkbox" id="toggle">
+</nav>
+
+
+<div class="mobile-menu">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Categories</a>
+    <a href="#">Deals</a>
+    <a href="#">Contact</a>
+    <a href="#">Cart</a>
+    <a href="#">Login</a>
+</div>
+
+<div class="content">
+    Welcome to ShopEase!
+</div>
+<div>
+    <bold>Your one-stop destination for all shopping needs.</bold>
+</div>
+</div>
+<p> Name : Shivam Kumar Srivastava</p>
+<p> Admission no.: 2025b01010946</p>
+</body>
+</html>
